@@ -1,0 +1,28 @@
+swagger: "2.0"
+info:
+  version: "1.0"
+  title: RestDemo
+  description: description
+  termsOfService: terms
+  license:
+    name: MIT
+    url: http://opensource.org/licenses/MIT
+host: "localhost:8080"
+produces:
+  - "application/json"
+basePath: "/api/v1"
+paths:
+  /echo:
+    get:
+      operationId: swagger.echo_get
+      summary: "Say hello"
+      description: "Say hello"
+      responses:
+        200:
+          description: OK
+    post:
+      operationId: swagger.echo_post
+      summary: "Please send me a message"
+      responses:
+        200:
+          description: OK
